@@ -1,0 +1,19 @@
+<div class="">
+	<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Available Data - List</strong></div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="table in data">
+                        <td>{{table.date}}</td>
+                        <td>{{table.number}}</td>
+                    </tr>                
+                </tbody>
+            </table> 
+        </div>
+    </section>
+</div>    
