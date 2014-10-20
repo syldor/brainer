@@ -20,6 +20,10 @@ config([
     templateUrl: 'components/data/data.html',
     controller: 'DataCtrl'
   })
+  .when('/spatial/accidents', {
+    templateUrl: 'components/accidents/accidents.html',
+    controller: 'AccidentsCtrl'
+  })
   .otherwise({redirectTo: '/dashboard'});
 }]);
 

@@ -10,11 +10,24 @@
 
   <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css"/>
 
-  <link rel="stylesheet" href="css/dashboard/dashboard.css"/>
+  <link rel="stylesheet" href="css/dashboard.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.5.1.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdn.oesmith.co.uk/morris-0.5.1.min.js"></script>
+
+  <script src="data/accidents_2005.geojson"></script>
+  <script src="data/roads.geojson"></script>
+
 
   <!-- SCRIPTS -->
   <script src="lib/angular/angular.js"></script>
   <script src="components/services/config_s.js"></script>
+  <script src="components/services/leaf_s.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="lib/angular-cookies/angular-cookies.js"></script>
   <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
@@ -27,7 +40,9 @@
   <script src="components/dashboard/dashboard_c.js"></script>
   <script src="components/tables/tables_c.js"></script>
   <script src="components/data/data_c.js"></script>
+  <script src="components/accidents/accidents_c.js"></script>
   <!-- SCRIPTS -->
+
 
 </head>
 <body ng-controller="MasterCtrl">

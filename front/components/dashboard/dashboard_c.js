@@ -2,4 +2,4 @@
 
 function DashboardCtrl($scope, $http, $filter) {
 
-}
+};

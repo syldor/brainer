@@ -1,6 +1,6 @@
 <div class="">
-	<section class="panel panel-default">
-        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Available Data - List</strong></div>
+    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Available Data - General Statistics</strong></div>
         <div class="panel-body">
             <table class="table table-striped">
                 <thead>
@@ -12,6 +12,25 @@
                         <td>{{table.name}}</td>
                         <td>{{table.description}}</td>
                         <td><button class="btn btn-primary" ng-click="see_data(table.name)">See</button></td>
+                    </tr>                
+                </tbody>
+            </table> 
+            <button class="btn btn-success" ng-click="insert_data()">Add</button>
+        </div>
+    </section>
+    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Available Data - Spatial Data</strong></div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="table in spatial_data">
+                        <td>{{table.name}}</td>
+                        <td>{{table.description}}</td>
+                        <td><button class="btn btn-primary" ng-click="see_spatial_data(table.name)">See</button></td>
                     </tr>                
                 </tbody>
             </table> 

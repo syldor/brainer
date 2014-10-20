@@ -26,7 +26,7 @@ exports.get_data = function(req, res) {
       res.send(err);
     }
     else {
-      res.send(result.rows);
+      res.send(result);
     }
   }); 
 }
